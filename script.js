@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Select the button and add a click event listener
     document.getElementById("navigateButton").addEventListener("click", function() {
-        window.location.href = "landing.html"; // Redirect to landing.html
+        window.location.href = "Landing.html"; // Redirect to landing.html
     });
 });
 let C = 0;
