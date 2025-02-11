@@ -1,8 +1,18 @@
 // script.js
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the button and add a click event listener
+    document.getElementById("navigateButton").addEventListener("click", function() {
+        window.location.href = "landing.html"; // Redirect to landing.html
+    });
+});
+let C = 0;
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
+    var a = 'Orappano?';
+    var b = 'Yes Njekkedi!';
+    var c = 'Mariyathak Yes Njekkiko'
     if (option === 'yes') {
         // Flash rainbow colors
         flashRainbowColors(function() {
@@ -11,12 +21,23 @@ function selectOption(option) {
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
-        document.getElementById('no-button').innerText = 'You sure?'; 
+        if (C < 3){
+        document.getElementById('no-button').innerText = a; 
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
-        var newSize = parseFloat(currentFontSize) * 2; // Increase font size by  * 2px
+        var newSize = parseFloat(currentFontSize) * 1.5; // Increase font size by  * 2px
         yesButton.style.fontSize = newSize + 'px';
+        C++;}
+        else{
+            document.getElementById('no-button').innerText = b; 
+        // Increase font size of "Yes" button
+        var yesButton = document.getElementById('yes-button');
+        var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
+        var newSize = parseFloat(currentFontSize) * 1.5; // Increase font size by  * 2px
+        yesButton.style.fontSize = newSize + 'px';
+        C++;
+        }
     } else {
         // If neither "Yes" nor "No" was clicked, show an alert message
         alert('Invalid option!');
@@ -78,3 +99,4 @@ function displayCatHeart() {
 
 // Display the cat.gif initially
 displayCat();
+

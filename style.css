@@ -24,8 +24,11 @@ body {
 }
 
 #question {
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
-    font-size: 52px; /* Set font size for the question */
+    /*font-family: 'Kaushan Script', ;  Apply Kaushan Script font to the question */
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px; /* Set font size for the question */
 }
 
 #options {
