@@ -17,27 +17,37 @@ body {
 }
 
 #paragraph {
-    text-align: left;
+    position: absolute;
+    /*text-align: left;*/
     padding: 20px;
     font-family: "Courgette", serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 30px; 
-    background-color: #fff;
+    font-size: 20px; 
+    /*background-color: #fff;*/
     margin: 0;
     line-height: 1.6;
+    position: absolute;
+    top: 45%; /* Adjust to center vertically */
+    left: 50%; /* Adjust to center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    color: black; /* Change as needed */
+    padding: 5px ;
+    border-radius: 10px;
 }
 
 #text-container {
-    width: 60%;
-    max-width: 600px;
+    position: relative;
+    width: 40%;
+    max-width: 450px;
     padding: 30px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-    line-height: 1.6;    
+    line-height: 1.6;
+    display: inline-block;    
 }
 
 #image-container {
@@ -62,12 +72,13 @@ body {
 
 button {
     padding: 10px 20px; /* Set padding for buttons */
-    margin: 0 10px; /* Set margin around buttons */
-    font-size: 26px; /* Set font size for buttons */
+    margin: 10px 10px; /* Set margin around buttons */
+    font-size: 30px; /* Set font size for buttons */
     font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
     background-color: #FB607F; /* Set button background color */
-    color: white; /* Set text color to white */
-    border: none; /* Remove button border */
+    color: rgb(255, 255, 255); /* Set text color to white */
+    border: 1px solid black; /* Remove button border */
+    border-radius: 10px;
     cursor: pointer; /* Set cursor to pointer on hover */
 }
 
@@ -77,6 +88,7 @@ button {
     height: 100vh;
     border: none;
     background-color: #C8A2C8;
+    background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmw2bDlhcnYzZHR4MTlrYTgwYWlmeXBxeXd5dmpybWJyMnFkcWthayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y80iPTzJSLa9YOgBI9/giphy.gif') no-repeat center center/cover;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -84,4 +96,46 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.gif-container {
+    text-align: center; /* Centers the content */
+    margin-top: 20px; /* Adds space above */
+}
+
+.gif-image {
+    width: 250px; /* Adjust size as needed */
+    height: auto; /* Keeps aspect ratio */
+    
+}
+
+.gif-text {
+    font-size: 24px;
+    color: black; /* Change color if needed */
+    font-family: 'Courgette', serif;
+    margin-top: 0px; /* Adds space between GIF and text */
+    border: 5px solid rgb(214, 149, 245);
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+#letterbg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#navigatebutton {
+    position: absolute;
+    top: 112%;
+    padding: 10px 20px; /* Set padding for buttons */
+    margin: 10px 10px; /* Set margin around buttons */
+    font-size: 30px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: rgb(255, 255, 255); /* Set text color to white */
+    border: 1px solid black; /* Remove button border */
+    border-radius: 10px;
+    cursor: pointer; /* Set cursor to pointer on hover */
 }
