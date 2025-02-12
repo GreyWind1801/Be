@@ -69,3 +69,17 @@ button {
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
 }
+
+#start {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

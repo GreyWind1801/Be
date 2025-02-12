@@ -24,7 +24,20 @@
             <!--Button to navigate to next page-->
             <button id="navigateButton"> Lets Go! </button>
         </div>
+        <button id="start" onclick="clickMusic();">Hit It</button>
     </div>
+    </div>
+    <audio id="audio" src="music.mp3" autostart="true"> <source src="music.ogg" type="audio/ogg">
+    </audio>
+    <script>
+        function clickMusic(){
+            var sound = document.getElementById('audio');
+            sound.play();
+        }
+        document.getElementById("start").addEventListener("click", function() {
+        this.style.display = "none";
+});
+    </script>
     <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
