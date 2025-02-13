@@ -18,23 +18,37 @@ body {
 }
 
 #paragraph {
-    position: absolute;
-    /*text-align: left;*/
+   /* position: absolute;
+    /*text-align: left;
     padding: 20px;
     font-family: "Courgette", serif;
     font-weight: 400;
     font-style: italic;
     font-size: 20px; 
     /*background-color: #fff;*/
-    margin: 0;
+    /*margin: 0;
     line-height: 1.6;
     position: absolute;
     top: 45%; /* Adjust to center vertically */
-    left: 50%; /* Adjust to center horizontally */
-    transform: translate(-50%, -50%); /* Perfect centering */
-    color: black; /* Change as needed */
-    padding: 5px ;
-    border-radius: 10px;
+    /*left: 50%; /* Adjust to center horizontally */
+    /*transform: translate(-50%, -50%); /* Perfect centering */
+    /*color: black; /* Change as needed */
+    /*padding: 5px ;
+    border-radius: 10px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust width */
+    padding: 20px;
+    /*background: rgba(255, 255, 255, 0.8); /* Light background to mimic paper */
+    /*border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for paper effect */
+    font-family: 'Dancing Script', cursive; /* Handwritten font */
+    font-size: 20px;
+    line-height: 1.6;
+    color: #4A2C2A; /* Warm, romantic text color */
+    text-align: left;
 }
 
 #text-container {
@@ -122,9 +136,11 @@ button {
 }
 
 #letterbg {
-    width: 100%;
+    width: 100%; /* Adjust as needed */
     height: auto;
     display: block;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for paper effect
 }
 
 #navigatebutton {
@@ -139,4 +155,9 @@ button {
     border: 1px solid black; /* Remove button border */
     border-radius: 10px;
     cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+#bgimg-container {
+    position: relative;
+    text-align: center;
 }
