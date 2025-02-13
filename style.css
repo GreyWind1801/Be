@@ -17,6 +17,38 @@ body {
     height: 100vh; /* Make the container full viewport height */
 }
 
+#page-container{
+    position: relative;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    background: url('bgf.jpg') no-repeat center center/cover;
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Make the container full viewport height */
+}
+
+#image-container {
+    /* This container will hold the images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between images */
+}
+
+#bgimg-container {
+    position: relative;
+    text-align: center;
+}
+
+#letterbg {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    display: block;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for paper effect*/
+}
+
 #paragraph {
    /* position: absolute;
     /*text-align: left;
@@ -39,7 +71,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%; /* Adjust width */
+    width: 75%; /* Adjust width */
     padding: 20px;
     /*background: rgba(255, 255, 255, 0.8); /* Light background to mimic paper */
     /*border-radius: 10px;
@@ -48,51 +80,19 @@ body {
     font-size: 20px;
     line-height: 1.6;
     color: #4A2C2A; /* Warm, romantic text color */
-    text-align: left;
+    text-align: justify;;
 }
 
-#text-container {
-    position: relative;
-    width: 40%;
-    max-width: 450px;
-    padding: 30px;
-    /*background-color: #fff;*/
-   /*border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
-    font-size: 16px;
-    line-height: 1.6;
-    display: inline-block;    
-}
-
-#image-container {
-    /* This container will hold the images */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* Adjust spacing between images */
-}
-
-#question {
-    /*font-family: 'Kaushan Script', ;  Apply Kaushan Script font to the question */
-    font-family: "Kaushan Script", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 60px; /* Set font size for the question */
-}
-
-#options {
-    margin-top: 20px; /* Add space above the options */
-}
-
-button {
+#navigatebutton {
+    position: absolute;
+    top: 112%;
     padding: 10px 20px; /* Set padding for buttons */
     margin: 10px 10px; /* Set margin around buttons */
     font-size: 30px; /* Set font size for buttons */
     font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
     background-color: #FB607F; /* Set button background color */
     color: rgb(255, 255, 255); /* Set text color to white */
-    border: 1px solid black; /* Remove button border */
+    border: 3px solid black; /* Remove button border */
     border-radius: 10px;
     cursor: pointer; /* Set cursor to pointer on hover */
 }
@@ -135,17 +135,40 @@ button {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-#letterbg {
-    width: 100%; /* Adjust as needed */
-    height: auto;
-    display: block;
+#text-container {
+    position: relative;
+    width: 40%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: #505050ce;
+    border: 5px solid #000000;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for paper effect
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    font-size: 16px;
+    line-height: 1.6;
+    display: inline-block;   
+    text-shadow: 
+    -2px -2px 0 rgb(255, 255, 255),  
+     2px -2px 0 rgb(255, 255, 255),  
+    -2px  2px 0 rgb(255, 255, 255),  
+     2px  2px 0 rgb(255, 255, 255); 
+    background-color: rgba(255, 253, 208, 0.5); /* Cream with 50% transparency */
+    
 }
 
-#navigatebutton {
-    position: absolute;
-    top: 112%;
+#question {
+    /*font-family: 'Kaushan Script', ;  Apply Kaushan Script font to the question */
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px; /* Set font size for the question */
+}
+
+#options {
+    margin-top: 20px; /* Add space above the options */
+}
+
+button {
     padding: 10px 20px; /* Set padding for buttons */
     margin: 10px 10px; /* Set margin around buttons */
     font-size: 30px; /* Set font size for buttons */
@@ -157,7 +180,8 @@ button {
     cursor: pointer; /* Set cursor to pointer on hover */
 }
 
-#bgimg-container {
-    position: relative;
-    text-align: center;
-}
+
+
+
+
+
