@@ -11,7 +11,7 @@ body {
     position: relative;
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack elements vertically */
-    background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXh0eTZoZ25xYWgwYmdxZHZmdTJvYXpnMWRuMG8wYTE1OXRwMDlmYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/c3UJj3xcwWDd0hML3W/giphy.gif') no-repeat center center/cover;
+    background: url('scenic.gif') no-repeat center center/cover;
     align-items: center; /* Center-align items horizontally */
     justify-content: center; /* Center-align items vertically */
     height: 100vh; /* Make the container full viewport height */
@@ -146,7 +146,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     font-size: 16px;
     line-height: 1.6;
-    display: inline-block;   
+    display: inline-block;
+    background: url(np.jpg);   
     text-shadow: 
     -2px -2px 0 rgb(255, 255, 255),  
      2px -2px 0 rgb(255, 255, 255),  
@@ -174,8 +175,8 @@ button {
     font-size: 30px; /* Set font size for buttons */
     font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
     background-color: #FB607F; /* Set button background color */
-    color: rgb(255, 255, 255); /* Set text color to white */
-    border: 1px solid black; /* Remove button border */
+    color: rgb(0, 0, 0); /* Set text color to white */
+    border: 3px solid black; /* Remove button border */
     border-radius: 10px;
     cursor: pointer; /* Set cursor to pointer on hover */
 }
